@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CookiePal — Your Thermomix® Recipe Buddy</title>
+  <meta name="description" content="CookiePal is your friendly AI agent for discovering the best Thermomix® recipes — free, fast, and fun." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root {
+      --cookiepal-green: #00703C; /* Dark green */
+      --cookiepal-mint: #A8E6A3;  /* Light mint background */
+    }
+    html {
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans";
+    }
+  </style>
+</head>
+
+<body class="bg-[var(--cookiepal-mint)] text-[var(--cookiepal-green)]">
+  <!-- Hero -->
+  <section class="max-w-6xl mx-auto px-6 py-14 grid md:grid-cols-2 gap-10 items-center">
+    <div>
+      <div class="flex items-center gap-3 mb-4">
+        <img src="cookiepal_logo.png" alt="CookiePal logo" class="w-16 h-16 rounded-xl">
+        <span class="text-lg font-bold">CookiePal</span>
+      </div>
+      <h1 class="text-4xl sm:text-5xl font-extrabold leading-tight">
+        Your Thermomix® Recipe Buddy
+      </h1>
+      <p class="mt-4 text-lg text-[var(--cookiepal-green)]/80">
+        Tell CookiePal what you’re craving, and it finds the perfect Thermomix® recipe — step-by-step guidance, adapted to your ingredients, 100% free.
+      </p>
+      <div class="mt-6 flex flex-wrap gap-3">
+        <a href="https://wa.me/xxxxxxxxxxx?text=Hola%20CookiePal%21%20Quiero%20una%20receta%20Thermomix"
+          class="inline-flex items-center justify-center rounded-2xl px-5 py-3 font-semibold bg-[var(--cookiepal-green)] text-white shadow-lg hover:shadow-xl active:scale-[0.99]">
+          Try CookiePal →
+        </a>
+        <a href="#signup" class="inline-flex items-center justify-center rounded-2xl px-5 py-3 font-semibold ring-1 ring-[var(--cookiepal-green)] hover:bg-[var(--cookiepal-green)]/10">
+          Get updates
+        </a>
+      </div>
+      <div class="mt-3 text-sm text-[var(--cookiepal-green)]/70">
+        Trusted by 12 beta users and 2 very supportive abuelas.
+      </div>
+    </div>
+
+    <div class="rounded-3xl shadow-xl shadow-slate-900/5 ring-1 ring-[var(--cookiepal-green)] bg-white/80 backdrop-blur p-6">
+      <div class="rounded-2xl ring-1 ring-[var(--cookiepal-green)] max-h-64 overflow-hidden">
+        <img src="cookiepal_demo.png" alt="CookiePal demo" class="w-full h-auto object-contain">
+      </div>
+      
+      <p class="text-xs text-[var(--cookiepal-green)]/70 mt-2">
+        Example: “Tengo pollo y arroz” → CookiePal: “Arroz con pollo TM5 en 25 min.”
+      </p>
+    </div>
+  </section>
+
+  <!-- How it works -->
+  <section class="max-w-6xl mx-auto px-6 py-10">
+    <h2 class="text-2xl font-bold mb-6">How CookiePal works</h2>
+    <ol class="grid md:grid-cols-3 gap-6">
+      <li class="rounded-2xl p-6 ring-1 ring-[var(--cookiepal-green)] bg-white/80">
+        <span class="text-sm font-semibold">1) Tell CookiePal what you want</span>
+        <p class="text-[var(--cookiepal-green)]/80 text-sm mt-1">“Quiero algo dulce” or “Rápido para 2 personas.”</p>
+      </li>
+      <li class="rounded-2xl p-6 ring-1 ring-[var(--cookiepal-green)] bg-white/80">
+        <span class="text-sm font-semibold">2) Get tailored options</span>
+        <p class="text-[var(--cookiepal-green)]/80 text-sm mt-1">Clear ingredients, time, difficulty, and quick tips.</p>
+      </li>
+      <li class="rounded-2xl p-6 ring-1 ring-[var(--cookiepal-green)] bg-white/80">
+        <span class="text-sm font-semibold">3) Cook with step-by-step help</span>
+        <p class="text-[var(--cookiepal-green)]/80 text-sm mt-1">Follow each step right inside the chat.</p>
+      </li>
+    </ol>
+  </section>
+
+  <!-- Features -->
+  <section class="max-w-6xl mx-auto px-6 py-8 grid md:grid-cols-3 gap-6">
+    <div class="rounded-2xl p-6 ring-1 ring-[var(--cookiepal-green)] bg-white/80">
+      <h3 class="font-semibold mb-1">Best recipes, fast</h3>
+      <p class="text-[var(--cookiepal-green)]/80 text-sm">Curated Thermomix® suggestions with clear timings and difficulty.</p>
+    </div>
+    <div class="rounded-2xl p-6 ring-1 ring-[var(--cookiepal-green)] bg-white/80">
+      <h3 class="font-semibold mb-1">Pantry-aware</h3>
+      <p class="text-[var(--cookiepal-green)]/80 text-sm">Tell CookiePal your ingredients, and it suggests matching recipes.</p>
+    </div>
+    <div class="rounded-2xl p-6 ring-1 ring-[var(--cookiepal-green)] bg-white/80">
+      <h3 class="font-semibold mb-1">100% free</h3>
+      <p class="text-[var(--cookiepal-green)]/80 text-sm">No paywall. Just pure cooking joy, with pro features coming later.</p>
+    </div>
+  </section>
+
+  <!-- Signup -->
+  <section id="signup" class="max-w-xl mx-auto px-6 py-12">
+    <div class="rounded-3xl shadow-xl shadow-slate-900/5 ring-1 ring-[var(--cookiepal-green)] bg-white/80 backdrop-blur px-7 py-8">
+      <div class="flex items-center gap-2 mb-5">
+        <img src="cookiepal_logo.png" alt="CookiePal logo" class="w-10 h-10 rounded-xl">
+        <span class="text-sm uppercase tracking-wider">CookiePal</span>
+      </div>
+      <h3 class="text-2xl font-bold leading-tight">Get product updates</h3>
+      <p class="mt-2 text-[var(--cookiepal-green)]/80">We’ll email you when new features or pro access are ready.</p>
+
+      <form name="beta-signup" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="mt-6 grid gap-4">
+        <input type="hidden" name="form-name" value="beta-signup" />
+        <p class="hidden"><label>Don’t fill this out: <input name="bot-field" /></label></p>
+
+        <div class="grid gap-2">
+          <label for="name" class="text-sm font-medium">Your name</label>
+          <input id="name" name="name" type="text" autocomplete="name" required
+            class="w-full rounded-2xl border border-[var(--cookiepal-green)]/50 bg-white/90 px-4 py-3 outline-none focus:ring-4 ring-[var(--cookiepal-green)]/30 focus:border-[var(--cookiepal-green)]" />
+        </div>
+
+        <div class="grid gap-2">
+          <label for="email" class="text-sm font-medium">Email</label>
+          <input id="email" name="email" type="email" autocomplete="email" required
+            class="w-full rounded-2xl border border-[var(--cookiepal-green)]/50 bg-white/90 px-4 py-3 outline-none focus:ring-4 ring-[var(--cookiepal-green)]/30 focus:border-[var(--cookiepal-green)]" />
+        </div>
+
+        <div class="grid gap-2">
+          <label for="goal" class="text-sm font-medium">What should CookiePal add next?</label>
+          <textarea id="goal" name="goal" rows="3" placeholder="e.g., meal plan, grocery list, calories…"
+            class="w-full rounded-2xl border border-[var(--cookiepal-green)]/50 bg-white/90 px-4 py-3 outline-none focus:ring-4 ring-[var(--cookiepal-green)]/30 focus:border-[var(--cookiepal-green)]"></textarea>
+        </div>
+
+        <div class="sm:flex items-center justify-between gap-3">
+          <label class="inline-flex items-center gap-2 text-sm">
+            <input type="checkbox" name="consent" required class="size-4 rounded border-[var(--cookiepal-green)]">
+            I agree to receive occasional updates.
+          </label>
+          <button type="submit"
+            class="mt-3 sm:mt-0 inline-flex items-center justify-center rounded-2xl px-5 py-3 font-semibold bg-[var(--cookiepal-green)] text-white shadow-lg hover:shadow-xl active:scale-[0.99]">
+            Join the list →
+          </button>
+        </div>
+
+        <p class="text-xs mt-1">By signing up, you agree to our <a href="#" class="underline">privacy policy</a>.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-[var(--cookiepal-green)]/30">
+    <div class="max-w-6xl mx-auto px-6 py-8 text-sm text-[var(--cookiepal-green)]/70" id="contact">
+      <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+        <p>© <span id="y"></span> CookiePal. Built with ❤️ in Chile.</p>
+        <p>Contact: <a href="mailto:hello@cookiepal.com" class="underline">hello@cookiepal.com</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
